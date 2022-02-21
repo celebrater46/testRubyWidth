@@ -29,3 +29,11 @@ const addLine = (str) => {
 addLine("｜堕天男《ルシフアァー》");
 addLine("｜堕天男《ルシフアアァー》");
 addLine("｜堕天男《ルシフアアアルシフアアア》");
+
+console.log(document.getElementById("p2-1").clientWidth); // 200
+console.log(document.getElementById("p2-2").clientWidth); // 220
+console.log(document.getElementById("p2-3").clientWidth); // 260
+
+// 漢字1文字に対してフリガナ2文字までは、スケール変化なし
+// 3文字以上からは、フリガナ1文字で0.5漢字分の幅が増える
+// 漢字1文字に対してフリガナが4文字であれば、漢字1文字分増える
